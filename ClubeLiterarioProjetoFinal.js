@@ -7,3 +7,14 @@ function Entrar() {
       x.style.display = "none";
     }
   }
+
+  // função de sidebar do menu!
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
