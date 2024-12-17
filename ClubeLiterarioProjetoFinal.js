@@ -8,13 +8,21 @@ function Entrar() {
     }
   }
 
-  // função de sidebar do menu!
-
-
+  // função de sidebar do menu! //
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "300px";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0%";
+}
+
+// função sidbar da página de perfil //
+
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "300px";
+}
+
+function closeNav2() {
+  document.getElementById("mySidenav2").style.width = "0%";
 }
