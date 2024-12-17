@@ -1,8 +1,10 @@
 /*Página Inicial antes do usuário logar*/
 /*Header*/
 #x1 {
-     height: 165px;
-     width: auto;}
+     max-height: 165px;
+     max-width: 1000px;
+     min-height:40px;
+     min-width: 250px;}
 
 #x2 {height:20px;
      width:20px}
@@ -53,8 +55,22 @@ hr{
 
   /*Div de como usar*/ 
 
-#divFoto {background-color: #d4a64f;
+#divComoUsar {background-color: #d4a64f;
           }
+#printInsc {
+     min-width: 20%;
+     min-height: 25%;
+     max-width: 30%;
+     min-height: 35%;
+     padding-left: 30px;
+ 
+     
+}
+
+#linhaComoUsar {
+     color:#341035;
+     float:left
+}
 
 /*imagem flutuante da biblioteca*/
 #x11 {float:right;
@@ -135,6 +151,16 @@ text-align:center ;}
      font-size: 20px;
      text-align: center;}
 
+#fechar {
+     height: 40px;
+     width:40px
+}
+
+#config {
+     height: 20px;
+     width: 20px
+}
+
 /*Configuração carrossel imagem*/
 .bodyRoxo{ background-color: #875396;}
 
@@ -210,6 +236,55 @@ textarea {border-radius: 10px;}
      
 }
 
+.rate {
+     border-bottom-right-radius: 12px;
+     border-bottom-left-radius: 12px
+ }
+ 
+ .rating {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: center
+ }
+ 
+ .rating>input {
+     display: none
+ }
+ 
+ .rating>label {
+     position: relative;
+     width: 1em;
+     font-size: 30px;
+     font-weight: 300;
+     color: #380f44;
+     cursor: pointer
+ }
+ 
+ .rating>label::before {
+     content: "\2605";
+     position: absolute;
+     opacity: 0
+ }
+ 
+ .rating>label:hover:before,
+ .rating>label:hover~label:before {
+     opacity: 1 !important
+ }
+ 
+ .rating>input:checked~label:before {
+     opacity: 1
+ }
+ 
+ .rating:hover>input:checked~label:before {
+     opacity: 0.4
+ }
+ 
+ .buttons {
+     top: 36px;
+     position: relative;
+     margin-right:40%
+ }
+ 
 /*Página de Perfil*/
 #mySidenav2 {background-color: #341035;
      height: 100%;
@@ -217,7 +292,7 @@ textarea {border-radius: 10px;}
      position: fixed;
      z-index: 1;
      top: 0;
-     left: 0px;
+     right: 0px;
      overflow-x: hidden;
      transition: 0.5s;
      padding-top: 60px;
@@ -231,15 +306,46 @@ textarea {border-radius: 10px;}
 .HeaderUser {
      width: 70%;
      height: 300px;
-     background-color: #f3e0f8;
+     background-color: #e7c695;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #ProfilePic {
      border-radius: 50%;
      border: #100613;
      border-width: 2px;
-     width: 13%;
+     width: 12%;
      height: 50%;
      margin-top: 100px;
      margin-left: 20px
+}
+
+.linhaV {
+     border-right: 1px solid rgb(255, 255, 255);
+     height:800px;
+   }
+
+.card-link {
+     font-family: 'quicksand', sans-serif;
+     color:#f3e0f8
+}
+
+.anotacoes {
+     float: right;
+     margin-left: 900px ;
+}
+.livLista {
+     float: right;
+     margin-right:40%
+}
+
+.livrosLidos {
+     float: right;
+     margin-right:40%
+}
+/*Página em qe o usuário irá ler*/
+
+#pdf{ width:800px ;
+      height:1000px;
+      margin-left: 550px;
 }
