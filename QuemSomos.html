@@ -37,7 +37,7 @@
                       <a class="nav-link" href="InscrevaSe.html">Inscreva-se</a>
                     </li>
                     <li class="col-sm-2">
-                      <a class="nav-link" href="#">Entre</a>
+                      <button onclick="Entrar()" class="btn">Entre</button> 
                     </li>
                 </ul>
     </div>   
@@ -46,6 +46,20 @@
   
     <hr class="container-fluid"><br>
 <!--Header-->
+<!--Div a ser mostrada quando apertar o link de entrar-->
+<div class="container-fluid" id="x7"><br><br>
+  <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
+<form method="post" action="Login.php" class="quicksand-regular2">
+    <label>@username ou E-mail:</label>
+    <input class="form-control" type="text" name="Name" placeholder="Nome">
+    <br><br>
+    <label>Senha:</label>
+    <input class="form-control" type="text" name="Senha" placeholder="senha123">
+    <br><br>
+    <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
+    <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
+</div>
+  <!--Fim-->
 <!--Body da página-->
     <div class="container-fluid"></div>
       <h1 class="quicksand-regular" id="x10">Quem somos?</h1><br>
@@ -89,40 +103,57 @@
         <li class="quicksand-regular2" id="x12">Recomendação de leitura</li>
       </ul>
     </div>
-    <div class="container-fluid" id="divFoto"><br>
+    <div class="container-fluid" id="divComoUsar"><br>
       <h1 class="quicksand-regular" id="x13">Como usar:</h1><br>
       <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>    
+        <p class="quicksand-regular2" id="x12">Primeiramente, o usuário irá se inscrever no site para criar uma conta.</p>
+      </ul>
+      <div class="container-fluid">
+        <img src="printInsc.png" id="printInsc">
+      </div><br>
       
       <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>
-  
-      <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>
-      <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>
-      <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>    
+        <hr class="linhaHome" id="linhaComoUsar"><br>
+        <h3 class="quicksand-regular" id="x13">Página de catálogo</h3>
+        <p class="quicksand-regular2" id="x12">Dessa forma, poderá ir para o home, onde terão múltiplos livros no catálogo à sua escolha.<br> 
+          Também poderá ver a média de avaliação deles pelos usuários do site. Os livros serão divididos em gêneros, e há a possibilidade<br>
+        de o usuário observar no catálogo uma coleção de livros por cada gênero. Eles serão:
+        <ul>
+        <li class="quicksand-regular2" id="x12">Romance</li>
+        <li class="quicksand-regular2" id="x12">Ficção científica</li>
+        <li class="quicksand-regular2" id="x12">Comédia romântica</li>
+        <li class="quicksand-regular2" id="x12">Biografia</li>
+        <li class="quicksand-regular2" id="x12">Drama</li>
+        <li class="quicksand-regular2" id="x12">Terror</li>
+        <li class="quicksand-regular2" id="x12">Aventura</li>
+        <li class="quicksand-regular2" id="x12">Mistério/Suspense</li><br>
+        
+        </ul>
+        </p>
+        <hr class="linhaHome" id="linhaComoUsar"><br>
+        <h3 class="quicksand-regular" id="x13">Escolha e leitura dos livros</h3>
+        <p class="quicksand-regular2" id="x12">Após clicar em um dos livros no catálogo, o usuário será redirecionado para um página em que<br>
+          haverá mais informações sobre determinada obra, como sua avaliação média, seu autor, seu gênero e a descrição deste livro. Também<br>
+          terão comentários sobre a narrativa abaixo das informações sobre o livro, além de mais livros parecidos com o escolhido.
+        </p><br>
+        <p class="quicksand-regular2" id="x12">Além disso, haverá um link para caso o leitor quiser ler este livro, que abrirá em uma página<br>
+          com o arquivo PDF do mesmo. Nessa página, a pessoa poderá fetivamente ler o livro e fazer anotações o livro quando desejar, como um<br>
+          comentário, só que privado.
+        </p><br>
+        <hr class="linhaHome" id="linhaComoUsar"><br>
+        <h3 class="quicksand-regular" id="x13">Página de perfil</h3>
+        <p class="quicksand-regular2" id="x12">A página de perfil terá o número de livro lidos, o número de avaliações do usuário, listas de <br>
+        livros para ler e livros que o usuário está lendo.</p><br>
+        <div class="container-fluid">
+          <img src="PrintPerfil.png" id="printInsc">
+        </div><br>
       
-      <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>
   
-      <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>
-      <ul>
-        <li class="quicksand-regular2" id="x12">Leitura de +1000 livros de graça!</li>
-      </ul>
     </div>
     
 </body>
 </html>
 
 </body>
+</html>
 </html>
