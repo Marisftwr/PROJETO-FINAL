@@ -1,3 +1,6 @@
+<?php
+include('protect.php')
+?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html lang="pt-br">
@@ -53,14 +56,15 @@
               <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
               <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
               <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
-              <a class="quicksand-regular2" href="#">Configurações</a><img id="config" src="configurações.png"><br><br>
-              <a class="quicksand-regular2" href="#">Sair</a><br><br>
+              <a class="quicksand-regular2" href="configuracoes.php">Configurações</a><img id="config" src="configurações.png"><br><br>
+              <a href="logout.php" class="quicksand-regular2">Sair</a><br><br>
             </div>
             <!--Fim da nav lateral-->
           </ul>
       </nav>
         <hr class="linhaHome">
         <br><br>
+        <h1 class="quicksand-regular">Bem vindo ao Clube Literario, <?php echo $_SESSION['nome']; ?></h1><br>
         <!--Carrossel de fotos-->
         <div class="container-fluid">
         <div id="carouselExampleIndicators" class="carousel slide">
