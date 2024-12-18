@@ -1,3 +1,41 @@
+<?php
+include ('conexao.php');
+
+if(isset($_POST['email']) || isset($_POST['senha'])) {
+    
+    if(strlen($_POST['email'])==0) {
+        echo "Preencha seu email";
+    } else if(strlen($_POST['senha'])==0) {
+        echo "Preencha sua senha";
+    } else {
+
+        $email = $mysqli->real_escape_string($_POST['email']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT * FROM usuarios WHERE email='$email' AND senha='$senha'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
+
+        $quantidade=$sql_query->num_rows;
+
+        if($quantidade==1){
+
+            $usuario = $sql_query->fetch_assoc();
+
+            if(!isset($_SESSION)) {
+                session_start();
+            }
+
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+
+            header("Location: Home.php");
+            
+        } else{
+            echo "Falha ao logar! Email ou senha incorretos";
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta charset lang="pt-br">
@@ -39,13 +77,14 @@
   <!--Div a ser mostrada quando apertar o link de entrar-->
     <div class="container-fluid" id="x7"><br><br>
       <h1 class="quicksand-regular" id="Entrar">Entrar</h1>
-    <form method="post" action="Login.php" class="quicksand-regular2">
-        <label>@username ou E-mail:</label>
-        <input class="form-control" type="text" name="Name" placeholder="Nome">
+    <form method="post" action="" class="quicksand-regular2">
+        <label>E-mail:</label>
+        <input class="form-control" type="text" name="email" placeholder="Nome">
         <br><br>
         <label>Senha:</label>
-        <input class="form-control" type="text" name="Senha" placeholder="senha123">
+        <input class="form-control" type="password" name="senha" placeholder="senha123">
         <br><br>
+        <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
         <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
         <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
     </div>
