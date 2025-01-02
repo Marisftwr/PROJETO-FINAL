@@ -9,23 +9,23 @@ include('protect.php')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube literário - Home</title>
-    <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="ClubeLiterarioProjetoFinal.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="CSS\bootstrap-grid.css">
+    <link rel='stylesheet' href="CSS\ClubeLiterarioProjetoFinal.css">
+    <link rel='stylesheet' href="CSS\bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
-    <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
+    <script type="text/javascript" src="JavaScript\ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="JavaScript\bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
       <nav class="container-fluid">
         <ul class="row">
           <a class="col-sm-3">
-            <img id="x1" src="LogoSite.png">
+            <img id="x1" src="Imagens\LogoSite.png">
           </a>
           <li class="col-sm-2">
-            <a class="nav-link" href="Home.html">Home</a>
+            <a class="nav-link" href="Home.php">Home</a>
           </li>
             <li class="col-sm-2">
               <a class="nav-link" href="#">Destaques</a>
@@ -48,7 +48,7 @@ include('protect.php')
             </li>
             <!--Nav lateral-->
             <div class="col-sm-1">
-            <button class="btn btn-outline-secondary" type="submit" id="" onclick="openNav()"><img id="x2" src="menu.png"></button>
+            <button class="btn btn-outline-secondary" type="submit" id="" onclick="openNav()"><img id="x2" src="Imagens\menu.png"></button>
             </div>
             <div id="mySidenav" class="sidenav">
               <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="fechar.png"></a><br><br>
@@ -77,16 +77,16 @@ include('protect.php')
             <div class="container-fluid">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img id="x5" src="Harry Potter banner.png" class="d-block w-100" alt="...">
+                <img id="x5" src="Imagens\Harry Potter banner.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="Harry Potter banner.png" class="d-block w-100" alt="...">
+                <img src="Imagens\Harry Potter banner.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="Harry Potter banner.png" class="d-block w-100" alt="...">
+                <img src="Imagens\Harry Potter banner.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="Harry Potter banner.png" class="d-block w-100" alt="...">
+                <img src="Imagens\Harry Potter banner.png" class="d-block w-100" alt="...">
               </div>
             </div>
             </div>
@@ -108,28 +108,28 @@ include('protect.php')
           <br><br>
           <div class="container-fluid">
             <ul class="row">
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
             </ul><br><br>
             <ul class="row">
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
             </ul><br><br>
             <ul class="row">
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
+              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
             </ul>
           </div>
 
