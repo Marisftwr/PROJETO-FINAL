@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel='stylesheet' href="bootstrap-grid.css">
-    <link rel='stylesheet' href="ClubeLiterarioProjetoFinal.css">
-    <link rel='stylesheet' href="bootstrap copy.css">
+    <link rel='stylesheet' href="CSS\bootstrap-grid.css">
+    <link rel='stylesheet' href="CSS\ClubeLiterarioProjetoFinal.css">
+    <link rel='stylesheet' href="CSS\bootstrap copy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
-    <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
+    <script type="text/javascript" src="JavaScript\ClubeLiterarioProjetoFinal.js"></script>
+    <script type="text/javascript" src="JavaScript\bootstrap.bundle.min.js" ></script>
 
     <title>Nome do Livro</title>
 </head>
@@ -46,14 +46,23 @@
                 </ul>
               </li>
               <div class="col-sm-1">
-              <button class="btn btn-outline-secondary" type="submit" id="Enviar"><img id="x2" src="menu.png"></button>
+                <button class="btn btn-outline-secondary" type="submit" id="" onclick="openNav()"><img id="x2" src="Imagens\menu.png"></button>
+              </div>
+              <div id="mySidenav" class="sidenav">
+                <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="Imagens\fechar.png"></a><br><br>
+                <a href="PaginaDePerfil.html"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br><br>
+                <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
+                <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
+                <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
+                <a class="quicksand-regular2" href="#">Configurações</a><img id="config" src="Imagens\configurações.png"><br><br>
+                <a class="quicksand-regular2" href="#">Sair</a><br><br>
               </div>
             </ul>
         </nav>
         <hr class="linhaHome">
         <br><br>
         <div class="container-fluid">
-        <a href= "PáginasDeLeituraLivro.html"><img  id ="x14" src="NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a> 
+        <a href= "PáginasDeLeituraLivro.html"><img  id ="x14" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a> 
         </div><br>
         <div class="container-fluid">
           <h3 id="x17" class="quicksand-regular">
@@ -72,10 +81,16 @@
             x pessoas avaliaram
           </h6>
           <h5 id="x17" class="quicksand-regular">
-            Gênero
+            Gênero:
           </h5>
           <h6 id="x17" class="quicksand-regular2">
             Gênero do livro
+          </h6><br>
+          <h5 id="x17" class="quicksand-regular">
+            Autor(a):
+          </h5>
+          <h6 id="x17" class="quicksand-regular2">
+            Nome do autor(a)
           </h6>
         </div><br><br>
         <!--Parte de comentários-->
