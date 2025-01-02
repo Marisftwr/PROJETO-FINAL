@@ -36,6 +36,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <meta charset lang="pt-br">
@@ -44,22 +45,22 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     <head>
         <title>Clube literário</title>
 
-        <link rel='stylesheet' href="bootstrap-grid.css">
-        <link rel='stylesheet' href="ClubeLiterarioProjetoFinal.css">
-        <link rel='stylesheet' href="bootstrap copy.css">
+        <link rel='stylesheet' href="CSS\bootstrap-grid.css">
+        <link rel='stylesheet' href="CSS\ClubeLiterarioProjetoFinal.css">
+        <link rel='stylesheet' href="CSS\bootstrap copy.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="ClubeLiterarioProjetoFinal.js"></script>
-        <script type="text/javascript" src="bootstrap.bundle.min.js" ></script>
+        <script type="text/javascript" src="JavaScript\ClubeLiterarioProjetoFinal.js"></script>
+        <script type="text/javascript" src="JavaScript\bootstrap.bundle.min.js" ></script>
         
     </head>
 <body class="bodyHome">
 <!--Header-->
     <nav class="container-fluid">
                 <ul class="row">
-                  <a class="col-sm-4" href="ClubeLiterarioProjetoFinal.html" >
-                    <img id="x1" src="LogoSite.png">
+                  <a class="col-sm-4" href="ClubeLiterarioProjetoFinal.php" >
+                    <img id="x1" src="Imagens\LogoSite.png">
                   </a>
                   <li class="col-sm-2">
                     <a class="nav-link" href="QuemSomos.html">Quem somos?</a>
@@ -85,8 +86,8 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
         <input class="form-control" type="password" name="senha" placeholder="senha123">
         <br><br>
         <button type="submit" value="Submit" class="btn btn-primary">Entrar</button><br><br>
-        <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="x-social-media-round-icon.png"></button><br><br>
-        <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="google.png"></button>
+        <button type="submit" value="Submit" class="btn btn-primary">Entrar com X<img id="x3" src="Imagens\x-social-media-round-icon.png"></button><br><br>
+        <button type="submit" value="Submit" class="btn btn-primary">Entrar com Google<img id="x4" src="Imagens\google.png"></button>
     </div>
   <!--Fim-->
     <h1 class="quicksand-regular">
@@ -104,16 +105,16 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
           <div class="container-fluid">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img id="x5" src="Carrossel1.png" class="d-block w-100" alt="...">
+              <img id="x5" src="Imagens\Carrossel3.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="Carrossel1.png" class="d-block w-100" alt="...">
+              <img src="Imagens\Carrossel2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="Carrossel1.png" class="d-block w-100" alt="...">
+              <img src="Imagens\Carrossel3.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="Carrossel1.png" class="d-block w-100" alt="...">
+              <img src="Imagens\Carrossel2.png" class="d-block w-100" alt="...">
             </div>
           </div>
           </div>
