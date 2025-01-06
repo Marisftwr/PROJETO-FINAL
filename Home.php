@@ -6,8 +6,6 @@ include('protect.php')
 <html lang="pt-br">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube literário - Home</title>
     <link rel='stylesheet' href="CSS\bootstrap-grid.css">
     <link rel='stylesheet' href="CSS\ClubeLiterarioProjetoFinal.css">
@@ -19,14 +17,14 @@ include('protect.php')
     <script type="text/javascript" src="JavaScript\bootstrap.bundle.min.js" ></script>
 </head>
 <body class="bodyRoxo">
-      <nav class="container-fluid">
+      <nav class="container">
         <ul class="row">
-          <a class="col-sm-3">
-            <img id="x1" src="Imagens\LogoSite.png">
+          <a class="col-mb-4">
+            <img class="img-fluid" src="Imagens\LogoSite.png">
           </a>
-          <li class="col-sm-2">
+            <li class="col-sm-2">
             <a class="nav-link" href="Home.php">Home</a>
-          </li>
+            </li>
             <li class="col-sm-2">
               <a class="nav-link" href="#">Destaques</a>
             </li>
@@ -51,13 +49,19 @@ include('protect.php')
             <button class="btn btn-outline-secondary" type="submit" id="" onclick="openNav()"><img id="x2" src="Imagens\menu.png"></button>
             </div>
             <div id="mySidenav" class="sidenav">
-              <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="fechar.png"></a><br><br>
-              <a href="PaginaDePerfil.html"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br><br>
+              <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="Imagens\fechar.png"></a><br><br>
+              <a href="PaginaDePerfil.php"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br>
+              <p class="quicksand-regular2"><?php echo $_SESSION['nome']; ?></p><br>
+              <form class="form-inline">
+              <input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success col-sm-1" type="submit"><img id="BotaoPesquisa" src="Imagens\SearchIcon1.png"></button>
+              </form>
               <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
               <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
               <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
-              <a class="quicksand-regular2" href="configuracoes.php">Configurações</a><img id="config" src="configurações.png"><br><br>
+              <a class="quicksand-regular2" href="configuracoes.php">Configurações</a><img id="config" src="Imagens\configurações.png"><br><br>
               <a href="logout.php" class="quicksand-regular2">Sair</a><br><br>
+              
             </div>
             <!--Fim da nav lateral-->
           </ul>
@@ -105,34 +109,93 @@ include('protect.php')
           <h1 class="quicksand-regular">
             Livros
           </h1>
-          <br><br>
-          <div class="container-fluid">
-            <ul class="row">
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-            </ul><br><br>
-            <ul class="row">
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-            </ul><br><br>
-            <ul class="row">
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-              <a class="col-sm-2" href="LivroEspecifico.html"><img id="x6" src="Imagens\NovaImagemTesteLivroParaFicarBonito.jpg" alt="Livro1"></a>
-            </ul>
-          </div>
+          <ul class="row sm-3">
+          <h3 id="x17" class="quicksand-regular">
+            Filtros:
+          </h3>
+          <li class="col-sm-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gêneros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Romance</a></li>
+                <li><a class="dropdown-item" href="#">Ficção centífica</a></li>
+                <li><a class="dropdown-item" href="#">Comédia Romântica</a></li>
+                <li><a class="dropdown-item" href="#">Biografia</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li> 
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                <li><a class="dropdown-item" href="#">Mistério/Suspense</a></li>
 
+              </ul>
+            </li>
+            <li class="col-sm-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Maior livro
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menor livro</a></li>
+             </ul>
+            </li>
+            <li class="col-sm-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mais lidos
+              </a>
+              <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menos lidos</a></li>
+             </ul>
+            </li>
+            </ul>
+            <br><br>
+            <div class="row">
+              <div class="col-lg">
+              <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="Imagens\HarryPotter1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+              </div>
+              <div class="col-lg">
+              <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="Imagens\HarryPotter1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+              </div>
+              <div class="col-lg">
+              <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="Imagens\HarryPotter1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+          </div>
+              <div class="col-lg">
+              <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="Imagens\HarryPotter1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg"><br><br>
+              <div class="card" style="width: 15rem;">
+            <img class="card-img-top" src="Imagens\HarryPotter1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <a href="LivroEspecifico.php" class="btn btn-primary">Veja mais</a>
+            </div>
+              </div>
+              </div>
+                </div>
+              </div>
+            </div>
         </div>
 </body>
 </html>
