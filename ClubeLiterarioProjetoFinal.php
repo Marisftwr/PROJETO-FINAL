@@ -57,10 +57,10 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
     </head>
 <body class="bodyHome">
 <!--Header-->
-    <nav class="container-fluid">
+    <nav class="container">
                 <ul class="row">
-                  <a class="col-sm-4" href="ClubeLiterarioProjetoFinal.php" >
-                    <img id="x1" src="Imagens\LogoSite.png">
+                  <a class="col-mb-4" href="ClubeLiterarioProjetoFinal.php" >
+                    <img class="img-fluid" src="Imagens\LogoSite.png">
                   </a>
                   <li class="col-sm-2">
                     <a class="nav-link" href="QuemSomos.html">Quem somos?</a>
