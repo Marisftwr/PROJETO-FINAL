@@ -1,3 +1,6 @@
+<?php
+include('protect.php')
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <meta charset="UTF-8">
@@ -22,10 +25,10 @@
         <nav class="container-fluid">
           <ul class="row">
             <a class="col-sm-3">
-              <img id="x1" src="LogoSite.png">
+              <img id="x1" src="Imagens\LogoSite.png">
             </a>
             <li class="col-sm-2">
-              <a class="nav-link" href="Home.html">Home</a>
+              <a class="nav-link" href="Home.php">Home</a>
             </li>
               <li class="col-sm-2">
                 <a class="nav-link" href="#">Destaques</a>
@@ -50,7 +53,8 @@
               </div>
               <div id="mySidenav" class="sidenav">
                 <a class="quicksand-regular2" href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img id="fechar" src="Imagens\fechar.png"></a><br><br>
-                <a href="PaginaDePerfil.html"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br><br>
+                <a href="PaginaDePerfil.php"><img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"></a><br>
+                <p class="quicksand-regular2"><?php echo $_SESSION['nome']; ?></p><br>
                 <a class="quicksand-regular2" href="QuemSomos.html">Quem Somos?</a><br><br>
                 <a class="quicksand-regular2" href="#">Minhas listas</a><br><br>
                 <a class="quicksand-regular2" href="#">Avaliações</a><br><br>
@@ -105,9 +109,10 @@
               <form>
               <div class="sm-4">
                 <label for="commentContent" class="form-label">
-                  <a href="PaginaDePerfil">
-                  <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar">
+                  <a href="PaginaDePerfil.php">
+                  <img src="https://via.placeholder.com/50" class="rounded-circle me-3" alt="User Avatar"><br>
                   </a>
+                  <h5 class="card-title mb-0"><?php echo $_SESSION['nome']; ?></h5>
                 </label>
                 <div class="container-fluid">
                 <textarea class="form-control" id="commentContent" rows="2" COLS="200" placeholder="Comente aqui"></textarea>
